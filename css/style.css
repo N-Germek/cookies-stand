@@ -1,3 +1,18 @@
-/* * {
+* {
     box-sizing: border-box;
+}
+
+div  ul{
+    background-color: lightgray;
+    margin: 25rem;
+    border: 1px solid maroon;
+    display: inline-flex;
+}
+
+/* ul {
+    background-color: lightgray;
+    margin: 25rem;
+    border: 1px solid maroon;
+    display: inline-flex;
+
 } */
