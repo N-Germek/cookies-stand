@@ -1,18 +1,17 @@
 * {
     box-sizing: border-box;
 }
-
-div  ul{
+/* 
+div ul{
     background-color: lightgray;
-    margin: 25rem;
+    margin: 10rem;
     border: 1px solid maroon;
-    display: inline-flex;
 }
 
-/* ul {
+ul {
     background-color: lightgray;
     margin: 25rem;
     border: 1px solid maroon;
-    display: inline-flex;
+    /* display: inline-flex; */
 
-} */
+/* } */ */
