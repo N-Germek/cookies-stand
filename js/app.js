@@ -105,11 +105,28 @@ let tokyo = {
         let display = `The total cookies sold are ${totalHourlyCookies}.`;
         console.log(display);
         return [totalHourlyCookies, display];
+    },
+    render: function () {
+        this.calcCookiesPerHour();
+        let tokyoStore = document.getElementById('sea');
+        let tokyoUl = document.createElement('ul');
+        console.log(this.avgCookiesSoldHoulyArray);
+        for (let j = 0; j < this.avgCookiesSoldHoulyArray.length; j++) {
+            let tokLi = document.createElement('li');
+            tokLi.textContent = `${hour[j]} ${this.avgCookiesSoldHoulyArray[j]}`;
+            tokyoUl.appendChild(tokLi);
+        }
+        tokyoStore.appendChild(tokyoUl);
+    
+    let total = document.createElement('li');
+    total.textContent = `total ${this.dailyTotal}`;
+    tokyoStore.appendChild(total)
     }
 }
-tokyo.calcCookiesPerHour();
+// tokyo.calcCookiesPerHour();
 // console.log(tokyo);
 tokyo.sum();
+tokyo.render();
 
 let dubai = {
     name: 'Dubai',
