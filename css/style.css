@@ -1,6 +1,43 @@
 * {
     box-sizing: border-box;
 }
+
+h1 {
+    font-family: 'Josefin Slab', serif;
+    font-size: xx-large;
+}
+body{
+    background-color: antiquewhite;
+}
+li {
+    font-family: 'Quicksand', sans-serif;
+}
+
+#sea {
+    font-family: 'My Soul', cursive;
+    font-size: x-large;
+}
+
+#tok {
+    font-family: 'My Soul', cursive;
+    font-size: x-large;
+}
+#dub {
+    font-family: 'My Soul', cursive;
+    font-size: x-large;
+}
+#par {
+    font-family: 'My Soul', cursive;
+    font-size: x-large;
+}
+#lim {
+    font-family: 'My Soul', cursive;
+    font-size: x-large;
+}
+.stores {
+    font-family: 'My Soul', cursive;
+    
+}
 /* 
 div ul{
     background-color: lightgray;
