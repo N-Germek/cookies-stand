@@ -18,37 +18,13 @@ li {
     font-size: x-large;
 }
 
-#tok {
-    font-family: 'My Soul', cursive;
-    font-size: x-large;
-}
-#dub {
-    font-family: 'My Soul', cursive;
-    font-size: x-large;
-}
-#par {
-    font-family: 'My Soul', cursive;
-    font-size: x-large;
-}
-#lim {
-    font-family: 'My Soul', cursive;
-    font-size: x-large;
-}
-.stores {
-    font-family: 'My Soul', cursive;
-    
-}
-/* 
+
 div ul{
     background-color: lightgray;
-    margin: 10rem;
     border: 1px solid maroon;
 }
 
 ul {
     background-color: lightgray;
-    margin: 25rem;
     border: 1px solid maroon;
-    /* display: inline-flex; */
-
-/* } */ 
+}
