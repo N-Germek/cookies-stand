@@ -9,42 +9,103 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="README" href="README.md">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=My+Soul&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=My+Soul&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
 
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-family: 'My Soul', cursive;
+            font-size: x-large;
+        }
+
+        table {
+            border-spacing: 0;
+            width: 300px;
+        }
+
+        table th {
+            font-family: 'My Soul', cursive;
+        }
+
+        table td {
+            font-family: 'Josefin Slab', serif;
+            font-size: xx-large;
+        }
+
+        table td,
+        table th {
+            border: thin black solid;
+            padding: 4px 6px;
+        }
+
+        td:last-of-type {
+            text-align: right;
+        }
+
+        footer {
+            margin-top: 450px;
+            padding-top: 25px;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h1>Pat’s Salmon Cookies</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html ">Home</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <h1>Pat’s Salmon Cookies</h1>
+            </ul>
+        </nav>
+        <div id="locations">
+            <h1 class="sales">Sales Information</h1>
+        </div>
+        <table>
+            <thead id="head"></thead>
+            <tbody id="body"></tbody>
+            <tfoot id="foot"></tfoot>
+        </table>
     </header>
-    <p>
-    </p>
-    <div>
-        <ul class="stores">
-            <li id="hours"></li>
-            <li id="sea">
-                Seattle
-            </li>
-            <li id="tok">
-                Tokyo
-            </li>
-            <li id="dub">
-                Dubai
-            </li>
-            <li id="par">
-                Paris
-            </li>
-            <li id="lim">
-                Lima
-            </li>
-        </ul>
-    </div>
+    <main>
+        <form id="stores">
+            <fieldset>
+                <label for="location">
+                    New Store Location
+                    <input id="location" />
+                </label>
+                <label for="min">
+                    Minimum Customers
+                    <input id="min" />
+                </label>
+                <label for="max">
+                    Maximum Customers
+                    <input id="max" />
+                </label>
 
+                <label for="avg">
+                    Average Cookies
+                    <input id="avg" />
+                </label>
 
+                <button id="button" type="submit">Add New Location</button>
+            </fieldset>
+            </forms>
+
+    </main>
+
+    </main>
+    <footer>
+        &copy; Natalija Germek 2022
+    </footer>
     <script src="js/app.js"></script>
 </body>
-<footer>
-</footer>
 
 </html>
