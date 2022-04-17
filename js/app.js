@@ -38,8 +38,8 @@ Store.prototype.render = function () {
   for (let i = 0; i < hour.length; i++) {
     let hourlyCookieSales = document.createElement('td');
     hourlyCookieSales.textContent = this.avgCookiesSoldHoulyArray[i];
-    stores.appendChild(hourlyCookieSales);
-    console.log(render);
+    storesRows.appendChild(hourlyCookieSales);
+    // console.log(render);
   };
         let total = document.createElement('td');
         total.textContent = this.dailyTotal;
@@ -94,13 +94,14 @@ new Store('Lima', 2, 16, 4.6);
 function renderLocations() {
     for (let i = 0; i < storesArray.length; i ++) {
     storesArray[i].render();
+    }
 };
 
 function footerReset() {
     while (foot.firstChild) { 
       foot.removeChild(foot.firstChild);
     }
-    makeFooter();
+    createFooter();
   }
 
 
@@ -123,4 +124,4 @@ function handleForm(event) {
   createHeader();
   renderLocations();
   createFooter();
-}; 
+ 
